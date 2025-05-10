@@ -69,5 +69,6 @@ namespace Project_PBO_Kel_5.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
     }
 }
