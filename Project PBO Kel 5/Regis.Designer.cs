@@ -70,6 +70,7 @@
             textBox3.Size = new Size(333, 33);
             textBox3.TabIndex = 17;
             textBox3.Text = "Username";
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // pictureBox5
             // 
@@ -132,7 +133,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-35, -56);
+            pictureBox1.Location = new Point(-33, -30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(640, 623);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -199,6 +200,7 @@
             textBox5.Size = new Size(333, 33);
             textBox5.TabIndex = 23;
             textBox5.Text = "Address";
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // pictureBox7
             // 
@@ -214,7 +216,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(595, 501);
+            checkBox1.Location = new Point(595, 502);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(22, 21);
             checkBox1.TabIndex = 24;
@@ -242,6 +244,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 26;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // label4
             // 
@@ -270,12 +273,13 @@
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Poppins", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.FromArgb(219, 131, 130);
-            linkLabel1.Location = new Point(971, 9);
+            linkLabel1.Location = new Point(968, 9);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(57, 28);
             linkLabel1.TabIndex = 30;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Login";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Regis
             // 
