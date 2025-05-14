@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             textBox2 = new TextBox();
@@ -40,30 +39,19 @@
             label2 = new Label();
             label4 = new Label();
             linkLabel1 = new LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-32, -6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(640, 623);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(760, 133);
+            pictureBox2.Location = new Point(746, 125);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(70, 67);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -73,7 +61,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(681, 203);
+            label1.Location = new Point(667, 195);
             label1.Name = "label1";
             label1.Size = new Size(216, 35);
             label1.TabIndex = 2;
@@ -86,7 +74,7 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(631, 257);
+            textBox2.Location = new Point(617, 249);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(333, 33);
@@ -97,7 +85,7 @@
             // 
             pictureBox4.BackColor = SystemColors.ButtonHighlight;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(598, 241);
+            pictureBox4.Location = new Point(584, 233);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(381, 63);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -110,7 +98,7 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox3.ForeColor = Color.Gray;
-            textBox3.Location = new Point(631, 333);
+            textBox3.Location = new Point(617, 325);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(333, 33);
@@ -122,7 +110,7 @@
             // 
             pictureBox5.BackColor = SystemColors.ButtonHighlight;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(598, 317);
+            pictureBox5.Location = new Point(584, 309);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(381, 63);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -134,7 +122,7 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(691, 386);
+            pictureBox3.Location = new Point(685, 378);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(185, 56);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -175,12 +163,24 @@
             linkLabel1.Text = "Register";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-2, -11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(584, 623);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(13F, 35F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1100, 600);
+            Controls.Add(pictureBox1);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -191,7 +191,6 @@
             Controls.Add(pictureBox4);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Font = new Font("Poppins", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = Color.FromArgb(164, 165, 169);
             FormBorderStyle = FormBorderStyle.None;
@@ -200,18 +199,16 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = " ";
             Load += Login_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label1;
         private TextBox textBox2;
@@ -222,5 +219,6 @@
         private Label label2;
         private Label label4;
         private LinkLabel linkLabel1;
+        private PictureBox pictureBox1;
     }
 }
