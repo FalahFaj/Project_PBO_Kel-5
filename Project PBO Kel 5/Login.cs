@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Project_PBO_Kel_5
 {
-    public partial class Register : Form
+    public partial class Login : Form
     {
-        public Register()
+        public Login()
         {
             InitializeComponent();
         }
