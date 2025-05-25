@@ -1,6 +1,6 @@
 ﻿namespace Project_PBO_Kel_5
 {
-    partial class Form2
+    partial class Dashboard_Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             panel1 = new Panel();
             button3 = new Button();
             button4 = new Button();
@@ -43,11 +43,6 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            panel3 = new Panel();
-            pictureBox7 = new PictureBox();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
             panel4 = new Panel();
             pictureBox8 = new PictureBox();
             label6 = new Label();
@@ -58,6 +53,11 @@
             label7 = new Label();
             cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartesianChart2 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            panel3 = new Panel();
+            label2 = new Label();
+            label4 = new Label();
+            pictureBox7 = new PictureBox();
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -67,12 +67,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -177,6 +177,7 @@
             panel2.Controls.Add(pictureBox4);
             panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(pictureBox2);
+            panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 54);
             panel2.Name = "panel2";
             panel2.Size = new Size(123, 573);
@@ -242,61 +243,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(52, 152, 219);
-            panel3.Controls.Add(pictureBox7);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label2);
-            panel3.Location = new Point(156, 60);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(221, 124);
-            panel3.TabIndex = 2;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
-            pictureBox7.Location = new Point(152, 35);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(66, 61);
-            pictureBox7.TabIndex = 6;
-            pictureBox7.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(3, 91);
-            label4.Name = "label4";
-            label4.Size = new Size(109, 20);
-            label4.TabIndex = 8;
-            label4.Text = "15 new orders";
-            label4.Click += label4_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(0, 35);
-            label3.Name = "label3";
-            label3.Size = new Size(100, 46);
-            label3.TabIndex = 7;
-            label3.Text = "1357";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(13, 13);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 23);
-            label2.TabIndex = 6;
-            label2.Text = "Orders";
             // 
             // panel4
             // 
@@ -385,7 +331,7 @@
             // cartesianChart1
             // 
             cartesianChart1.BackColor = Color.WhiteSmoke;
-            cartesianChart1.Location = new Point(622, 326);
+            cartesianChart1.Location = new Point(625, 326);
             cartesianChart1.MatchAxesScreenDataRatio = false;
             cartesianChart1.Name = "cartesianChart1";
             cartesianChart1.Size = new Size(433, 219);
@@ -402,22 +348,77 @@
             cartesianChart2.TabIndex = 7;
             cartesianChart2.Load += cartesianChart2_Load;
             // 
-            // Form2
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(52, 152, 219);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(pictureBox7);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(label2);
+            panel3.Location = new Point(156, 60);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(221, 124);
+            panel3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            label2.ForeColor = Color.WhiteSmoke;
+            label2.Location = new Point(13, 13);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 23);
+            label2.TabIndex = 6;
+            label2.Text = "Orders";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.WhiteSmoke;
+            label4.Location = new Point(3, 91);
+            label4.Name = "label4";
+            label4.Size = new Size(109, 20);
+            label4.TabIndex = 8;
+            label4.Text = "15 new orders";
+            label4.Click += label4_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
+            pictureBox7.Location = new Point(152, 35);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(66, 61);
+            pictureBox7.TabIndex = 6;
+            pictureBox7.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(0, 35);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 46);
+            label3.TabIndex = 7;
+            label3.Text = "1357";
+            // 
+            // Dashboard_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1082, 627);
+            Controls.Add(panel3);
+            Controls.Add(panel4);
             Controls.Add(cartesianChart2);
             Controls.Add(cartesianChart1);
             Controls.Add(panel5);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
+            Name = "Dashboard_Admin";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
@@ -432,15 +433,15 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -454,17 +455,12 @@
         private Button button3;
         private Button button4;
         private Button button2;
-        private Panel panel3;
         private Panel panel4;
         private Panel panel5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private Label label2;
-        private Label label4;
-        private Label label3;
-        private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private Label label6;
         private Label label5;
@@ -475,5 +471,10 @@
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart2;
         private PictureBox pictureBox5;
         private PictureBox pictureBox10;
+        private Panel panel3;
+        private Label label3;
+        private PictureBox pictureBox7;
+        private Label label4;
+        private Label label2;
     }
 }

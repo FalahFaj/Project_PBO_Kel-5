@@ -62,7 +62,7 @@ namespace Project_PBO_Kel_5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 dashboard = new Form2();
+            Dashboard_Admin dashboard = new Dashboard_Admin();
             dashboard.Show();     
             this.Close();
         }

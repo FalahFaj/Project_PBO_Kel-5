@@ -9,10 +9,7 @@ namespace Project_PBO_Kel_5
         static void Main()
         {
             // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Kelola_Product());
-
+            Application.Run(new Riwayat_Transaksi());
         }
 
     }

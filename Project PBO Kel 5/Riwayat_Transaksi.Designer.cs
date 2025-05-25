@@ -42,6 +42,7 @@
             Column8 = new DataGridViewTextBoxColumn();
             button1 = new Button();
             BtnExportPDF = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +74,6 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1020, 467);
             dataGridView1.TabIndex = 2;
-            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Column1
             // 
@@ -156,12 +156,27 @@
             BtnExportPDF.UseVisualStyleBackColor = false;
             BtnExportPDF.Click += ExportPDF_Click;
             // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = SystemColors.Control;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(1049, -1);
+            button2.Name = "button2";
+            button2.Size = new Size(33, 29);
+            button2.TabIndex = 6;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Riwayat_Transaksi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(149, 175, 192);
             ClientSize = new Size(1082, 627);
+            Controls.Add(button2);
             Controls.Add(BtnExportPDF);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
@@ -191,5 +206,6 @@
         private DataGridViewTextBoxColumn Column8;
         private Button button1;
         private Button BtnExportPDF;
+        private Button button2;
     }
 }
