@@ -67,7 +67,7 @@
             label1.Size = new Size(216, 35);
             label1.TabIndex = 2;
             label1.Text = "Get Started to Login";
-            label1.Click += label1_Click_1;
+            //label1.Click += label1_Click_1;
             // 
             // textBox2
             // 
@@ -105,7 +105,7 @@
             textBox3.Size = new Size(333, 33);
             textBox3.TabIndex = 10;
             textBox3.Text = "Password";
-            textBox3.TextChanged += textBox3_TextChanged;
+            //textBox3.TextChanged += textBox3_TextChanged;
             // 
             // pictureBox5
             // 
@@ -129,7 +129,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            //pictureBox3.Click += pictureBox3_Click;
             // 
             // label2
             // 
@@ -162,7 +162,7 @@
             linkLabel1.TabIndex = 15;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Register";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            //linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // pictureBox1
             // 
@@ -199,7 +199,7 @@
             Name = "Register";
             StartPosition = FormStartPosition.CenterScreen;
             Text = " ";
-            Load += Login_Load;
+            //Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
