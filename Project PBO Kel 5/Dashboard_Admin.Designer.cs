@@ -1,6 +1,6 @@
 ﻿namespace Project_PBO_Kel_5
 {
-    partial class Form2
+    partial class Dashboard_Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             panel1 = new Panel();
             button3 = new Button();
             button4 = new Button();

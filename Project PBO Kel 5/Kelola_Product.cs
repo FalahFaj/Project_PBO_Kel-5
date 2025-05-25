@@ -7,7 +7,7 @@ namespace Project_PBO_Kel_5
 {
     public partial class Kelola_Product : Form
     {
-        private List<Product> daftarProduk = new List<Product>();
+        private List<Produk> daftarProduk = new List<Produk>();
         private int nextId = 1;
 
         public Kelola_Product()
@@ -49,13 +49,12 @@ namespace Project_PBO_Kel_5
                 return;
             }
 
-            Product produkBaru = new Product()
+            Produk produkBaru = new Produk()
             {
-                Id = nextId++,
-                Nama = txtNama.Text,
-                Harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0,
-                Stock = int.TryParse(txtStok.Text, out int stock) ? stock : 0,
-                Deskripsi = txtDeskripsi.Text
+                nama_produk = txtNama.Text,
+                harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0,
+                stok = int.TryParse(txtStok.Text, out int stock) ? stock : 0,
+                //Deskripsi = txtDeskripsi.Text
             };
 
             daftarProduk.Add(produkBaru);
@@ -71,14 +70,14 @@ namespace Project_PBO_Kel_5
                 var row = dataGridView1.Rows[e.RowIndex];
                 if (row.Cells["Id"].Value is int selectedId)
                 {
-                    var selectedProduk = daftarProduk.Find(p => p.Id == selectedId);
+                    var selectedProduk = daftarProduk.Find(p => p.id_produk == selectedId);
                     if (selectedProduk != null)
                     {
-                        txtNama.Text = selectedProduk.Nama;
-                        txtHarga.Text = selectedProduk.Harga.ToString();
-                        txtStok.Text = selectedProduk.Stock.ToString();
-                        txtDeskripsi.Text = selectedProduk.Deskripsi;
-                        dataGridView1.Tag = selectedProduk.Id;
+                        txtNama.Text = selectedProduk.nama_produk;
+                        txtHarga.Text = selectedProduk.harga.ToString();
+                        txtStok.Text = selectedProduk.stok.ToString();
+                        //txtDeskripsi.Text = selectedProduk.Deskripsi;
+                        dataGridView1.Tag = selectedProduk.id_kategori;
                     }
                 }
             }
@@ -89,10 +88,10 @@ namespace Project_PBO_Kel_5
             if (dataGridView1.Tag is int index && index >= 0 && index < daftarProduk.Count)
             {
                 var produk = daftarProduk[index];
-                produk.Nama = txtNama.Text;
-                produk.Harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0;
-                produk.Stock = int.TryParse(txtStok.Text, out int stock) ? stock : 0;
-                produk.Deskripsi = txtDeskripsi.Text;
+                produk.nama_produk = txtNama.Text;
+                produk.harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0;
+                produk.stok = int.TryParse(txtStok.Text, out int stock) ? stock : 0;
+                //produk.Deskripsi = txtDeskripsi.Text;
 
                 RefreshDataGrid();
                 ClearForm();

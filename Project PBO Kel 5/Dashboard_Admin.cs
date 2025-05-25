@@ -15,9 +15,9 @@ using SkiaSharp;
 
 namespace Project_PBO_Kel_5
 {
-    public partial class Form2 : Form
+    public partial class Dashboard_Admin : Form
     {
-        public Form2()
+        public Dashboard_Admin()
         {
             InitializeComponent();
         }
