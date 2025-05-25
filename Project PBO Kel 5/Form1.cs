@@ -89,7 +89,7 @@ namespace Project_PBO_Kel_5
 
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -105,6 +105,21 @@ namespace Project_PBO_Kel_5
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
