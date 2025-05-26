@@ -73,6 +73,7 @@
             pictureBox15 = new PictureBox();
             pictureBox16 = new PictureBox();
             pictureBox17 = new PictureBox();
+            button12 = new Button();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel1.SuspendLayout();
@@ -233,6 +234,7 @@
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel2.Controls.Add(button12, 0, 5);
             tableLayoutPanel2.Controls.Add(button6, 0, 4);
             tableLayoutPanel2.Controls.Add(button8, 0, 1);
             tableLayoutPanel2.Controls.Add(button5, 0, 3);
@@ -622,6 +624,20 @@
             pictureBox17.TabIndex = 35;
             pictureBox17.TabStop = false;
             // 
+            // button12
+            // 
+            button12.FlatAppearance.BorderSize = 0;
+            button12.FlatStyle = FlatStyle.Flat;
+            button12.Font = new Font("Comic Sans MS", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button12.Image = (Image)resources.GetObject("button12.Image");
+            button12.Location = new Point(3, 476);
+            button12.Name = "button12";
+            button12.Size = new Size(74, 70);
+            button12.TabIndex = 7;
+            button12.Text = "Tentang Kami";
+            button12.TextImageRelation = TextImageRelation.ImageAboveText;
+            button12.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -731,5 +747,6 @@
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
         private PictureBox pictureBox17;
+        private Button button12;
     }
 }

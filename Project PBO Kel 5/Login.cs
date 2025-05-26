@@ -48,6 +48,14 @@ namespace Project_PBO_Kel_5
             regis.ShowDialog();
             this.Hide();
         }
+        private bool cekLogin(string username, string password)
+        {
+            using (var koneksiDB = new KoneksiDB())
+            {
+                var user = koneksiDB.customer.FirstOrDefault(u => u.username == username && u.password == password);
+                return user != null;
+            }
+        }
 
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -55,13 +63,24 @@ namespace Project_PBO_Kel_5
             string username = textBox2.Text;
             string password = textBox3.Text;
 
-            if (username == "Admin"  && password == "Asu Kamu")
+            if (username != "" || password != "")
             {
-                MessageBox.Show("Login Berhasil");
+                if (cekLogin(username, password))
+                {
+                    MessageBox.Show("Login Berhasil","Berhasil",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
+                    Form1 dashbord = new Form1();
+                    dashbord.ShowDialog();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username atau Password Salah","Gagal",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Username atau Password Salah");
+                MessageBox.Show("Username atau Password tidak boleh kosong", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
