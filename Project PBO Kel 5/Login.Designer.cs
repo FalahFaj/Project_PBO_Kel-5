@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             textBox2 = new TextBox();
@@ -40,6 +39,8 @@
             label2 = new Label();
             label4 = new Label();
             linkLabel1 = new LinkLabel();
+            label3 = new Label();
+            checkBox1 = new CheckBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -52,7 +53,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(746, 125);
+            pictureBox2.Location = new Point(770, 125);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(70, 67);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -62,12 +63,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(667, 195);
+            label1.BackColor = SystemColors.Window;
+            label1.ForeColor = Color.DimGray;
+            label1.Location = new Point(691, 195);
             label1.Name = "label1";
             label1.Size = new Size(216, 35);
             label1.TabIndex = 2;
             label1.Text = "Get Started to Login";
-            label1.Click += label1_Click_1;
             // 
             // textBox2
             // 
@@ -75,7 +77,7 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(617, 249);
+            textBox2.Location = new Point(641, 249);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(333, 33);
@@ -86,7 +88,7 @@
             // 
             pictureBox4.BackColor = SystemColors.ButtonHighlight;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(584, 233);
+            pictureBox4.Location = new Point(608, 233);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(381, 63);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -99,19 +101,18 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox3.ForeColor = Color.Gray;
-            textBox3.Location = new Point(617, 325);
+            textBox3.Location = new Point(641, 325);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(333, 33);
             textBox3.TabIndex = 10;
             textBox3.Text = "Password";
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // pictureBox5
             // 
             pictureBox5.BackColor = SystemColors.ButtonHighlight;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(584, 309);
+            pictureBox5.Location = new Point(608, 309);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(381, 63);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -123,7 +124,7 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(685, 378);
+            pictureBox3.Location = new Point(709, 378);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(185, 56);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -135,7 +136,8 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 8F, FontStyle.Bold);
-            label2.Location = new Point(867, 9);
+            label2.ForeColor = Color.DimGray;
+            label2.Location = new Point(873, 9);
             label2.Name = "label2";
             label2.Size = new Size(97, 28);
             label2.TabIndex = 12;
@@ -145,6 +147,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Poppins", 8F, FontStyle.Bold);
+            label4.ForeColor = Color.DimGray;
             label4.Location = new Point(1037, 9);
             label4.Name = "label4";
             label4.Size = new Size(51, 28);
@@ -156,7 +159,7 @@
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Poppins", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.FromArgb(219, 131, 130);
-            linkLabel1.Location = new Point(959, 9);
+            linkLabel1.Location = new Point(963, 9);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(80, 28);
             linkLabel1.TabIndex = 15;
@@ -164,24 +167,46 @@
             linkLabel1.Text = "Register";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Poppins", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.DimGray;
+            label3.Location = new Point(669, 488);
+            label3.Name = "label3";
+            label3.Size = new Size(130, 28);
+            label3.TabIndex = 26;
+            label3.Text = "Keep Me Login";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(641, 491);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(22, 21);
+            checkBox1.TabIndex = 27;
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-2, -11);
+            pictureBox1.Location = new Point(-30, -11);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(584, 623);
+            pictureBox1.Size = new Size(640, 623);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 16;
+            pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
             // 
-            // Register
+            // Login
             // 
             AutoScaleDimensions = new SizeF(13F, 35F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(1100, 600);
-            Controls.Add(pictureBox1);
+            Controls.Add(checkBox1);
+            Controls.Add(label3);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -192,11 +217,12 @@
             Controls.Add(pictureBox4);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Font = new Font("Poppins", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ForeColor = Color.FromArgb(164, 165, 169);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
-            Name = "Register";
+            Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = " ";
             Load += Login_Load;
@@ -220,6 +246,8 @@
         private Label label2;
         private Label label4;
         private LinkLabel linkLabel1;
+        private Label label3;
+        private CheckBox checkBox1;
         private PictureBox pictureBox1;
     }
 }

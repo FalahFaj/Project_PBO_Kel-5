@@ -30,706 +30,428 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            tableLayoutPanel1 = new TableLayoutPanel();
-            pictureBox9 = new PictureBox();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            button2 = new Button();
-            button4 = new Button();
-            button1 = new Button();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            button6 = new Button();
-            button8 = new Button();
-            button5 = new Button();
-            button7 = new Button();
-            button3 = new Button();
-            imageList1 = new ImageList(components);
-            label3 = new Label();
-            label2 = new Label();
-            pictureBox4 = new PictureBox();
             label1 = new Label();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            pictureBox5 = new PictureBox();
-            label4 = new Label();
-            pictureBox6 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            pnCategories = new Panel();
             pictureBox7 = new PictureBox();
+            button6 = new Button();
+            subpnMahar = new Panel();
+            pictureBox6 = new PictureBox();
+            button5 = new Button();
+            subpnSeserahan = new Panel();
+            pictureBox2 = new PictureBox();
+            button1 = new Button();
+            subpnSuvernir = new Panel();
             pictureBox8 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
-            pictureBox16 = new PictureBox();
-            pictureBox17 = new PictureBox();
-            tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            button7 = new Button();
+            pnbarang = new Panel();
+            pictureBox3 = new PictureBox();
+            button2 = new Button();
+            pnAboutus = new Panel();
+            pictureBox4 = new PictureBox();
+            button3 = new Button();
+            pnlogout = new Panel();
+            pictureBox5 = new PictureBox();
+            button4 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            timer2 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            pnCategories.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            subpnMahar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            subpnSeserahan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            subpnSuvernir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            pnbarang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnAboutus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            pnlogout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.BackColor = Color.FromArgb(219, 130, 130);
-            tableLayoutPanel1.ColumnCount = 7;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 80F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 273F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 86.4820862F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 13.5179157F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 42F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 39F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 33F));
-            tableLayoutPanel1.Controls.Add(pictureBox9, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel1, 2, 0);
-            tableLayoutPanel1.Controls.Add(button2, 4, 0);
-            tableLayoutPanel1.Controls.Add(button4, 5, 0);
-            tableLayoutPanel1.Controls.Add(button1, 6, 0);
-            tableLayoutPanel1.Controls.Add(pictureBox2, 3, 0);
-            tableLayoutPanel1.Controls.Add(pictureBox3, 1, 0);
-            tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 78F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 22F));
-            tableLayoutPanel1.Size = new Size(1082, 78);
-            tableLayoutPanel1.TabIndex = 0;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(3, 5);
-            pictureBox9.Margin = new Padding(3, 5, 0, 0);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(77, 55);
-            pictureBox9.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox9.TabIndex = 5;
-            pictureBox9.TabStop = false;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
+            panel1.BackColor = Color.FromArgb(32, 33, 36);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(398, 10);
-            panel1.Margin = new Padding(45, 10, 0, 0);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            tableLayoutPanel1.SetRowSpan(panel1, 2);
-            panel1.Size = new Size(420, 41);
-            panel1.TabIndex = 2;
-            panel1.Paint += panel1_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(380, 0);
-            pictureBox1.Margin = new Padding(20, 5, 0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 34);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(3, 7);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(378, 27);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "search";
-            textBox1.UseWaitCursor = true;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // button2
-            // 
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(970, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(30, 30);
-            button2.TabIndex = 6;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // button4
-            // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(1012, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(30, 30);
-            button4.TabIndex = 5;
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(1051, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(28, 30);
-            button1.TabIndex = 2;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(904, 5);
-            pictureBox2.Margin = new Padding(20, 5, 0, 0);
-            pictureBox2.Name = "pictureBox2";
-            tableLayoutPanel1.SetRowSpan(pictureBox2, 2);
-            pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(200, 5);
-            pictureBox3.Margin = new Padding(120, 5, 0, 0);
-            pictureBox3.Name = "pictureBox3";
-            tableLayoutPanel1.SetRowSpan(pictureBox3, 2);
-            pictureBox3.Size = new Size(113, 73);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 7;
-            pictureBox3.TabStop = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.BackColor = Color.FromArgb(219, 130, 130);
-            tableLayoutPanel2.ColumnCount = 1;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Controls.Add(button6, 0, 4);
-            tableLayoutPanel2.Controls.Add(button8, 0, 1);
-            tableLayoutPanel2.Controls.Add(button5, 0, 3);
-            tableLayoutPanel2.Controls.Add(button7, 0, 2);
-            tableLayoutPanel2.Controls.Add(button3, 0, 0);
-            tableLayoutPanel2.Dock = DockStyle.Left;
-            tableLayoutPanel2.Location = new Point(0, 78);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 6;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 90F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 90F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 104F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 92F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 97F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Size = new Size(80, 549);
-            tableLayoutPanel2.TabIndex = 1;
-            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
-            // 
-            // button6
-            // 
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(3, 379);
-            button6.Name = "button6";
-            button6.Size = new Size(74, 84);
-            button6.TabIndex = 4;
-            button6.Text = "Log Out";
-            button6.TextImageRelation = TextImageRelation.ImageAboveText;
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Comic Sans MS", 7F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Image = (Image)resources.GetObject("button8.Image");
-            button8.Location = new Point(3, 93);
-            button8.Name = "button8";
-            button8.Size = new Size(74, 84);
-            button8.TabIndex = 6;
-            button8.Text = "Keranjang";
-            button8.TextImageRelation = TextImageRelation.ImageAboveText;
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
-            // 
-            // button5
-            // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Comic Sans MS", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(3, 287);
-            button5.Name = "button5";
-            button5.Size = new Size(74, 84);
-            button5.TabIndex = 3;
-            button5.Text = "Tentang Kami";
-            button5.TextImageRelation = TextImageRelation.ImageAboveText;
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Comic Sans MS", 7F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(3, 183);
-            button7.Name = "button7";
-            button7.Size = new Size(74, 96);
-            button7.TabIndex = 5;
-            button7.Text = "Riwayat Transaksi";
-            button7.TextImageRelation = TextImageRelation.ImageAboveText;
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
-            // 
-            // button3
-            // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Comic Sans MS", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(3, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(74, 84);
-            button3.TabIndex = 2;
-            button3.Text = "Home";
-            button3.TextImageRelation = TextImageRelation.ImageAboveText;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            imageList1.ColorDepth = ColorDepth.Depth32Bit;
-            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
-            imageList1.TransparentColor = Color.Transparent;
-            imageList1.Images.SetKeyName(0, "cart.png");
-            imageList1.Images.SetKeyName(1, "user (3).png");
-            imageList1.Images.SetKeyName(2, "information.png");
-            imageList1.Images.SetKeyName(3, "home-button.png");
-            imageList1.Images.SetKeyName(4, "logout (1).png");
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.5F, FontStyle.Bold);
-            label3.Location = new Point(229, 192);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 35);
-            label3.TabIndex = 13;
-            label3.Text = "SALE";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.5F, FontStyle.Bold);
-            label2.Location = new Point(157, 192);
-            label2.Name = "label2";
-            label2.Size = new Size(66, 35);
-            label2.TabIndex = 12;
-            label2.Text = "ASH";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(136, 199);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(24, 28);
-            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox4.TabIndex = 11;
-            pictureBox4.TabStop = false;
+            panel1.Size = new Size(1100, 50);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.5F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(114, 192);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Bonbon Regular", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(57, 2);
             label1.Name = "label1";
-            label1.Size = new Size(28, 35);
-            label1.TabIndex = 10;
-            label1.Text = "F";
+            label1.Size = new Size(190, 48);
+            label1.TabIndex = 1;
+            label1.Text = "Cantiknya Mahar   Products";
             // 
-            // button9
+            // pictureBox1
             // 
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Comic Sans MS", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.Image = (Image)resources.GetObject("button9.Image");
-            button9.Location = new Point(398, 104);
-            button9.Name = "button9";
-            button9.Size = new Size(74, 84);
-            button9.TabIndex = 14;
-            button9.Text = "Souvenir";
-            button9.TextImageRelation = TextImageRelation.ImageAboveText;
-            button9.UseVisualStyleBackColor = true;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(11, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(39, 24);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // button10
+            // flowLayoutPanel1
             // 
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("Comic Sans MS", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.Location = new Point(542, 104);
-            button10.Name = "button10";
-            button10.Size = new Size(91, 84);
-            button10.TabIndex = 15;
-            button10.Text = "Dekoration";
-            button10.TextImageRelation = TextImageRelation.ImageAboveText;
-            button10.UseVisualStyleBackColor = true;
+            flowLayoutPanel1.BackColor = Color.FromArgb(23, 24, 29);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
+            flowLayoutPanel1.Controls.Add(pnbarang);
+            flowLayoutPanel1.Controls.Add(pnAboutus);
+            flowLayoutPanel1.Controls.Add(pnlogout);
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(0, 50);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(247, 550);
+            flowLayoutPanel1.TabIndex = 1;
             // 
-            // button11
+            // flowLayoutPanel2
             // 
-            button11.FlatAppearance.BorderSize = 0;
-            button11.FlatStyle = FlatStyle.Flat;
-            button11.Font = new Font("Comic Sans MS", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button11.Image = (Image)resources.GetObject("button11.Image");
-            button11.Location = new Point(705, 104);
-            button11.Name = "button11";
-            button11.Size = new Size(74, 84);
-            button11.TabIndex = 16;
-            button11.Text = "Mahar";
-            button11.TextImageRelation = TextImageRelation.ImageAboveText;
-            button11.UseVisualStyleBackColor = true;
+            flowLayoutPanel2.BackColor = Color.FromArgb(32, 33, 36);
+            flowLayoutPanel2.Controls.Add(pnCategories);
+            flowLayoutPanel2.Controls.Add(subpnMahar);
+            flowLayoutPanel2.Controls.Add(subpnSeserahan);
+            flowLayoutPanel2.Controls.Add(subpnSuvernir);
+            flowLayoutPanel2.Location = new Point(0, 0);
+            flowLayoutPanel2.Margin = new Padding(0);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(191, 59);
+            flowLayoutPanel2.TabIndex = 6;
             // 
-            // pictureBox5
+            // pnCategories
             // 
-            pictureBox5.BackColor = Color.Transparent;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(114, 237);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(133, 120);
-            pictureBox5.TabIndex = 17;
-            pictureBox5.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.Tomato;
-            label4.Location = new Point(141, 360);
-            label4.Name = "label4";
-            label4.Size = new Size(82, 20);
-            label4.TabIndex = 18;
-            label4.Text = "Rp 350.000";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.Transparent;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(274, 237);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(133, 120);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 19;
-            pictureBox6.TabStop = false;
+            pnCategories.Controls.Add(pictureBox7);
+            pnCategories.Controls.Add(button6);
+            pnCategories.Location = new Point(0, 0);
+            pnCategories.Margin = new Padding(0);
+            pnCategories.Name = "pnCategories";
+            pnCategories.Size = new Size(192, 59);
+            pnCategories.TabIndex = 6;
             // 
             // pictureBox7
             // 
-            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.BackColor = Color.FromArgb(23, 24, 29);
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(434, 237);
+            pictureBox7.Location = new Point(4, 9);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(133, 120);
+            pictureBox7.Size = new Size(53, 30);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 20;
+            pictureBox7.TabIndex = 2;
             pictureBox7.TabStop = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(23, 24, 29);
+            button6.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(-4, -33);
+            button6.Name = "button6";
+            button6.Size = new Size(229, 120);
+            button6.TabIndex = 2;
+            button6.Text = "             Categories";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // subpnMahar
+            // 
+            subpnMahar.Controls.Add(pictureBox6);
+            subpnMahar.Controls.Add(button5);
+            subpnMahar.Location = new Point(3, 62);
+            subpnMahar.Name = "subpnMahar";
+            subpnMahar.Size = new Size(192, 59);
+            subpnMahar.TabIndex = 4;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(1, 9);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(53, 30);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 2;
+            pictureBox6.TabStop = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(32, 33, 36);
+            button5.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(-4, -33);
+            button5.Name = "button5";
+            button5.Size = new Size(229, 120);
+            button5.TabIndex = 2;
+            button5.Text = "             Mahar";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // subpnSeserahan
+            // 
+            subpnSeserahan.Controls.Add(pictureBox2);
+            subpnSeserahan.Controls.Add(button1);
+            subpnSeserahan.Location = new Point(3, 127);
+            subpnSeserahan.Name = "subpnSeserahan";
+            subpnSeserahan.Size = new Size(192, 59);
+            subpnSeserahan.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1, 9);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(53, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(32, 33, 36);
+            button1.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-4, -33);
+            button1.Name = "button1";
+            button1.Size = new Size(229, 120);
+            button1.TabIndex = 2;
+            button1.Text = "             Seserahan";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // subpnSuvernir
+            // 
+            subpnSuvernir.Controls.Add(pictureBox8);
+            subpnSuvernir.Controls.Add(button7);
+            subpnSuvernir.Location = new Point(3, 192);
+            subpnSuvernir.Name = "subpnSuvernir";
+            subpnSuvernir.Size = new Size(192, 59);
+            subpnSuvernir.TabIndex = 7;
             // 
             // pictureBox8
             // 
-            pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(593, 237);
+            pictureBox8.Location = new Point(1, 9);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(133, 120);
+            pictureBox8.Size = new Size(53, 30);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 21;
+            pictureBox8.TabIndex = 2;
             pictureBox8.TabStop = false;
             // 
-            // pictureBox10
+            // button7
             // 
-            pictureBox10.BackColor = Color.Transparent;
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(757, 237);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(133, 120);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 22;
-            pictureBox10.TabStop = false;
+            button7.BackColor = Color.FromArgb(32, 33, 36);
+            button7.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.ImageAlign = ContentAlignment.MiddleLeft;
+            button7.Location = new Point(-4, -33);
+            button7.Name = "button7";
+            button7.Size = new Size(229, 120);
+            button7.TabIndex = 2;
+            button7.Text = "             Souvernir";
+            button7.TextAlign = ContentAlignment.MiddleLeft;
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
-            // pictureBox11
+            // pnbarang
             // 
-            pictureBox11.BackColor = Color.Transparent;
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(923, 237);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(133, 120);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 23;
-            pictureBox11.TabStop = false;
+            pnbarang.Controls.Add(pictureBox3);
+            pnbarang.Controls.Add(button2);
+            pnbarang.Location = new Point(3, 62);
+            pnbarang.Name = "pnbarang";
+            pnbarang.Size = new Size(191, 59);
+            pnbarang.TabIndex = 4;
             // 
-            // label5
+            // pictureBox3
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.Tomato;
-            label5.Location = new Point(302, 360);
-            label5.Name = "label5";
-            label5.Size = new Size(78, 20);
-            label5.TabIndex = 24;
-            label5.Text = "Rp625.000";
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1, 9);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(53, 30);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
             // 
-            // label6
+            // button2
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.Tomato;
-            label6.Location = new Point(466, 360);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 20);
-            label6.TabIndex = 25;
-            label6.Text = "Rp 499.000";
+            button2.BackColor = Color.FromArgb(23, 24, 29);
+            button2.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(-4, -31);
+            button2.Name = "button2";
+            button2.Size = new Size(229, 120);
+            button2.TabIndex = 2;
+            button2.Text = "             Keranjang";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
             // 
-            // label7
+            // pnAboutus
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.Tomato;
-            label7.Location = new Point(960, 360);
-            label7.Name = "label7";
-            label7.Size = new Size(82, 20);
-            label7.TabIndex = 26;
-            label7.Text = "Rp 350.000";
+            pnAboutus.Controls.Add(pictureBox4);
+            pnAboutus.Controls.Add(button3);
+            pnAboutus.Location = new Point(3, 127);
+            pnAboutus.Name = "pnAboutus";
+            pnAboutus.Size = new Size(191, 59);
+            pnAboutus.TabIndex = 4;
             // 
-            // label8
+            // pictureBox4
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.Tomato;
-            label8.Location = new Point(789, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(82, 20);
-            label8.TabIndex = 27;
-            label8.Text = "Rp 350.000";
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(1, 9);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(53, 30);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
             // 
-            // label9
+            // button3
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.Tomato;
-            label9.Location = new Point(627, 360);
-            label9.Name = "label9";
-            label9.Size = new Size(82, 20);
-            label9.TabIndex = 28;
-            label9.Text = "Rp 319.999";
+            button3.BackColor = Color.FromArgb(23, 24, 29);
+            button3.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(-5, -31);
+            button3.Name = "button3";
+            button3.Size = new Size(229, 120);
+            button3.TabIndex = 2;
+            button3.Text = "             About Us";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
-            // label10
+            // pnlogout
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(114, 396);
-            label10.Name = "label10";
-            label10.Size = new Size(126, 31);
-            label10.TabIndex = 29;
-            label10.Text = "Best Seller";
+            pnlogout.Controls.Add(pictureBox5);
+            pnlogout.Controls.Add(button4);
+            pnlogout.Location = new Point(3, 192);
+            pnlogout.Name = "pnlogout";
+            pnlogout.Size = new Size(191, 59);
+            pnlogout.TabIndex = 5;
             // 
-            // pictureBox12
+            // pictureBox5
             // 
-            pictureBox12.BackColor = Color.Transparent;
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(114, 447);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(133, 120);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 30;
-            pictureBox12.TabStop = false;
-            pictureBox12.Click += pictureBox12_Click;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(1, 9);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(53, 30);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
             // 
-            // pictureBox13
+            // button4
             // 
-            pictureBox13.BackColor = Color.Transparent;
-            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(274, 447);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(133, 120);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 31;
-            pictureBox13.TabStop = false;
+            button4.BackColor = Color.FromArgb(23, 24, 29);
+            button4.Font = new Font("Poppins ExtraLight", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(-5, -31);
+            button4.Name = "button4";
+            button4.Size = new Size(229, 120);
+            button4.TabIndex = 2;
+            button4.Text = "             Logout";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click_1;
             // 
-            // pictureBox14
+            // timer1
             // 
-            pictureBox14.BackColor = Color.Transparent;
-            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(434, 447);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(133, 120);
-            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox14.TabIndex = 32;
-            pictureBox14.TabStop = false;
+            timer1.Interval = 10;
+            timer1.Tick += timer1_Tick;
             // 
-            // pictureBox15
+            // timer2
             // 
-            pictureBox15.BackColor = Color.Transparent;
-            pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(593, 447);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(133, 120);
-            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox15.TabIndex = 33;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.BackColor = Color.Transparent;
-            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
-            pictureBox16.Location = new Point(757, 447);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(133, 120);
-            pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox16.TabIndex = 34;
-            pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.BackColor = Color.Transparent;
-            pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(923, 447);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(133, 120);
-            pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox17.TabIndex = 35;
-            pictureBox17.TabStop = false;
+            timer2.Interval = 10;
+            timer2.Tick += timer2_Tick;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1082, 627);
-            ControlBox = false;
-            Controls.Add(pictureBox17);
-            Controls.Add(pictureBox16);
-            Controls.Add(pictureBox15);
-            Controls.Add(pictureBox14);
-            Controls.Add(pictureBox13);
-            Controls.Add(pictureBox12);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(pictureBox11);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(label4);
-            Controls.Add(pictureBox5);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(pictureBox4);
-            Controls.Add(label1);
-            Controls.Add(tableLayoutPanel2);
-            Controls.Add(tableLayoutPanel1);
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.White;
+            ClientSize = new Size(1100, 600);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
+            IsMdiContainer = true;
+            Margin = new Padding(4);
             Name = "Form1";
-            Text = "3";
-            Load += Form1_Load;
-            tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
+            pnCategories.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            subpnMahar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            subpnSeserahan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            subpnSuvernir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            pnbarang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnAboutus.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            pnlogout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Panel panel1;
-        private TableLayoutPanel tableLayoutPanel1;
-        private TableLayoutPanel tableLayoutPanel2;
-        private ImageList imageList1;
-        private Button button1;
-        private Button button4;
-        private Button button2;
-        private PictureBox pictureBox2;
-        private TextBox textBox1;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox9;
-        private Button button3;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Label label3;
-        private Label label2;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
         private Label label1;
-        private Button button9;
-        private Button button10;
-        private Button button11;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel pnbarang;
+        private PictureBox pictureBox3;
+        private Button button2;
+        private Panel pnAboutus;
+        private PictureBox pictureBox4;
+        private Button button3;
+        private Panel pnlogout;
         private PictureBox pictureBox5;
-        private Label label4;
+        private Button button4;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Timer timer1;
+        private Panel subpnMahar;
         private PictureBox pictureBox6;
+        private Button button5;
+        private Panel subpnSeserahan;
+        private PictureBox pictureBox2;
+        private Button button1;
+        private Panel pnCategories;
         private PictureBox pictureBox7;
+        private Button button6;
+        private Panel subpnSuvernir;
         private PictureBox pictureBox8;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox11;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox16;
-        private PictureBox pictureBox17;
+        private Button button7;
+        private System.Windows.Forms.Timer timer2;
     }
 }
