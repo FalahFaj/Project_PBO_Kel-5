@@ -53,9 +53,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-2, -11);
+            pictureBox1.Location = new Point(-2, -9);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(584, 623);
+            pictureBox1.Size = new Size(580, 610);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
@@ -79,7 +79,6 @@
             label1.Size = new Size(180, 20);
             label1.TabIndex = 2;
             label1.Text = "Get Started to Login";
-            //label1.Click += label1_Click_1;
             // 
             // textBox2
             // 
@@ -117,7 +116,6 @@
             textBox3.Size = new Size(333, 33);
             textBox3.TabIndex = 10;
             textBox3.Text = "Password";
-            //textBox3.TextChanged += textBox3_TextChanged;
             // 
             // pictureBox5
             // 
@@ -141,7 +139,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
-            //pictureBox3.Click += pictureBox3_Click;
             // 
             // label2
             // 
@@ -177,7 +174,6 @@
             linkLabel1.TabIndex = 15;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Register";
-            //linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // panel1
             // 
