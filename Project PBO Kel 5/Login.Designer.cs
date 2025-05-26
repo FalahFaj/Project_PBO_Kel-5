@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             textBox2 = new TextBox();
@@ -168,7 +167,7 @@
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.FromArgb(219, 131, 130);
-            linkLabel1.Location = new Point(959, 9);
+            linkLabel1.Location = new Point(963, 9);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(69, 17);
             linkLabel1.TabIndex = 15;
@@ -190,9 +189,11 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(1100, 600);
-            Controls.Add(pictureBox1);
+            Controls.Add(checkBox1);
+            Controls.Add(label3);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -202,7 +203,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ForeColor = Color.FromArgb(164, 165, 169);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "Login";
@@ -231,6 +232,8 @@
         private Label label2;
         private Label label4;
         private LinkLabel linkLabel1;
+        private Label label3;
+        private CheckBox checkBox1;
         private PictureBox pictureBox1;
         private Panel panel1;
     }
