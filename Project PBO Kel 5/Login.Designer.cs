@@ -130,7 +130,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            //pictureBox3.Click += pictureBox3_Click;
             // 
             // label2
             // 
@@ -165,7 +165,7 @@
             linkLabel1.TabIndex = 15;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Register";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            //linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label3
             // 
@@ -225,7 +225,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = " ";
-            Load += Login_Load;
+            //Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

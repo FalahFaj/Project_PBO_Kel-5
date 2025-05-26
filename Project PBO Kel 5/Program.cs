@@ -13,5 +13,6 @@ namespace Project_PBO_Kel_5
             ApplicationConfiguration.Initialize();
             Application.Run(new DashboardUser());
         }
+
     }
 }
