@@ -25,8 +25,8 @@ namespace Project_PBO_Kel_5
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Login login = new Login();
-            login.ShowDialog();
+            Regis register = new Regis();
+            register.ShowDialog();
             this.Show();
 
         }
@@ -48,24 +48,30 @@ namespace Project_PBO_Kel_5
         }
     }
 
-    //public partial class Login : Form
-    //{
-    //    public Login()
-    //    {
-    //        InitializeComponent();
-    //    }
-    //    private Register registerForm;
+    public partial class Login : Form
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+        private Register registerForm;
 
-    //    public Login(Register register)
-    //    {
-    //        InitializeComponent();
-    //        this.registerForm = register;
-    //    }
+        public Login(Register register)
+        {
+            InitializeComponent();
+            this.registerForm = register;
+        }
 
-    //    private void btnBackToRegister_Click(object sender, EventArgs e)
-    //    {
-    //        registerForm.Show();
-    //        this.Close();
-    //    }
-    //}
+        private void btnBackToRegister_Click(object sender, EventArgs e)
+        {
+            registerForm.Show();
+            this.Close();
+        }
+
+
+        private void InitializeComponent()
+        {
+        
+        }
+    }
 }
