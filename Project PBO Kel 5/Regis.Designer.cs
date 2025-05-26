@@ -42,8 +42,6 @@
             pictureBox6 = new PictureBox();
             textBox5 = new TextBox();
             pictureBox7 = new PictureBox();
-            checkBox1 = new CheckBox();
-            label2 = new Label();
             pictureBox8 = new PictureBox();
             label4 = new Label();
             label5 = new Label();
@@ -133,7 +131,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-33, -30);
+            pictureBox1.Location = new Point(-35, -9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(640, 623);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -213,32 +211,12 @@
             pictureBox7.TabIndex = 22;
             pictureBox7.TabStop = false;
             // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(595, 502);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(22, 21);
-            checkBox1.TabIndex = 24;
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Poppins", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(623, 501);
-            label2.Name = "label2";
-            label2.Size = new Size(130, 28);
-            label2.TabIndex = 25;
-            label2.Text = "Keep Me Login";
-            // 
             // pictureBox8
             // 
             pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(848, 494);
+            pictureBox8.Location = new Point(848, 516);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(128, 33);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -286,13 +264,11 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1078, 544);
+            ClientSize = new Size(1100, 600);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(label5);
             Controls.Add(pictureBox8);
-            Controls.Add(label2);
-            Controls.Add(checkBox1);
             Controls.Add(textBox5);
             Controls.Add(pictureBox7);
             Controls.Add(textBox1);
@@ -336,8 +312,6 @@
         private PictureBox pictureBox6;
         private TextBox textBox5;
         private PictureBox pictureBox7;
-        private CheckBox checkBox1;
-        private Label label2;
         private PictureBox pictureBox8;
         private Label label4;
         private Label label5;

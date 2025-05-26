@@ -33,7 +33,7 @@
             lblNamaUser.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lblNamaUser.Location = new Point(10, 5);
             lblNamaUser.Name = "lblNamaUser";
-            lblNamaUser.Size = new Size(97, 23);
+            lblNamaUser.Size = new Size(116, 28);
             lblNamaUser.TabIndex = 0;
             lblNamaUser.Text = "Nama User";
             // 
@@ -44,7 +44,7 @@
             lblPesanTerakhir.ForeColor = SystemColors.ControlDarkDark;
             lblPesanTerakhir.Location = new Point(10, 27);
             lblPesanTerakhir.Name = "lblPesanTerakhir";
-            lblPesanTerakhir.Size = new Size(109, 20);
+            lblPesanTerakhir.Size = new Size(133, 25);
             lblPesanTerakhir.TabIndex = 1;
             lblPesanTerakhir.Text = "Pesan terakhir...";
             // 
@@ -54,9 +54,9 @@
             lblWaktu.AutoSize = true;
             lblWaktu.Font = new Font("Segoe UI", 8F, FontStyle.Italic);
             lblWaktu.ForeColor = SystemColors.GrayText;
-            lblWaktu.Location = new Point(182, 6);
+            lblWaktu.Location = new Point(182, 12);
             lblWaktu.Name = "lblWaktu";
-            lblWaktu.Size = new Size(44, 19);
+            lblWaktu.Size = new Size(49, 21);
             lblWaktu.TabIndex = 2;
             lblWaktu.Text = "12:45";
             // 
@@ -69,7 +69,7 @@
             Controls.Add(lblPesanTerakhir);
             Controls.Add(lblNamaUser);
             Name = "ChatUser";
-            Size = new Size(232, 53);
+            Size = new Size(232, 64);
             ResumeLayout(false);
             PerformLayout();
         }
