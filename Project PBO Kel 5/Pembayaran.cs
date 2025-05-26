@@ -95,7 +95,7 @@ namespace Project_PBO_Kel_5
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();
+            DashboardUser form = new DashboardUser();
             form.ShowDialog();
             this.Hide();
         }

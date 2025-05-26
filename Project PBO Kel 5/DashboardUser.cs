@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Project_PBO_Kel_5
 {
-    public partial class Form1 : Form
+    public partial class DashboardUser : Form
     {
         AboutUs aboutUs;
         Keranjang keranjang;
         SubMahar subMahar;
         SubSeserahan subSeserahan;
         SubSuvernir subSuvernir;
-        public Form1()
+        public DashboardUser()
         {
             InitializeComponent();
         }

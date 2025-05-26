@@ -1,6 +1,6 @@
 ﻿namespace Project_PBO_Kel_5
 {
-    partial class Form1
+    partial class DashboardUser
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUser));
             panel1 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
