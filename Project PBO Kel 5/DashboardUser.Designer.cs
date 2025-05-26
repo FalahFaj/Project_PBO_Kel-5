@@ -390,7 +390,7 @@
             timer2.Interval = 10;
             timer2.Tick += timer2_Tick;
             // 
-            // Form1
+            // DashboardUser
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
@@ -398,10 +398,10 @@
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
             Margin = new Padding(4);
-            Name = "Form1";
+            Name = "DashboardUser";
+            Load += DashboardUser_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

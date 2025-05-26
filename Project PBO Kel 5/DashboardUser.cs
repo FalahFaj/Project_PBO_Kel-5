@@ -222,5 +222,10 @@ namespace Project_PBO_Kel_5
             login.ShowDialog();
             this.Show();
         }
+
+        private void DashboardUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
