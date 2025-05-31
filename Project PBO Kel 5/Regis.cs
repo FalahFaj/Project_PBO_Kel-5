@@ -48,30 +48,4 @@ namespace Project_PBO_Kel_5
         }
     }
 
-    //public partial class Login : Form
-    //{
-    //    public Login()
-    //    {
-    //        InitializeComponent();
-    //    }
-    //    private Regis registerForm;
-
-    //    public Login(Regis register)
-    //    {
-    //        InitializeComponent();
-    //        this.registerForm = register;
-    //    }
-
-    //    private void btnBackToRegister_Click(object sender, EventArgs e)
-    //    {
-    //        registerForm.Show();
-    //        this.Close();
-    //    }
-
-
-    //    //private void InitializeComponent()
-    //    //{
-        
-    //    //}
-    //}
 }

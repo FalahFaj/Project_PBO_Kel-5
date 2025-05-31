@@ -37,10 +37,12 @@
             // 
             // TxtPesan
             // 
-            TxtPesan.Location = new Point(265, 399);
+            TxtPesan.Location = new Point(331, 499);
+            TxtPesan.Margin = new Padding(4);
             TxtPesan.Name = "TxtPesan";
-            TxtPesan.Size = new Size(459, 27);
+            TxtPesan.Size = new Size(573, 31);
             TxtPesan.TabIndex = 2;
+            TxtPesan.TextChanged += TxtPesan_TextChanged;
             // 
             // BtnSend
             // 
@@ -48,9 +50,10 @@
             BtnSend.IconColor = Color.Green;
             BtnSend.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnSend.IconSize = 40;
-            BtnSend.Location = new Point(729, 392);
+            BtnSend.Location = new Point(911, 490);
+            BtnSend.Margin = new Padding(4);
             BtnSend.Name = "BtnSend";
-            BtnSend.Size = new Size(42, 40);
+            BtnSend.Size = new Size(52, 50);
             BtnSend.TabIndex = 4;
             BtnSend.UseVisualStyleBackColor = true;
             BtnSend.Click += BtnSend_Click;
@@ -59,20 +62,22 @@
             // 
             LblNamaUser.AutoSize = true;
             LblNamaUser.Font = new Font("Palatino Linotype", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LblNamaUser.Location = new Point(267, 8);
+            LblNamaUser.Location = new Point(385, 9);
+            LblNamaUser.Margin = new Padding(4, 0, 4, 0);
             LblNamaUser.Name = "LblNamaUser";
-            LblNamaUser.Size = new Size(98, 24);
+            LblNamaUser.Size = new Size(19, 29);
             LblNamaUser.TabIndex = 5;
-            LblNamaUser.Text = "NamaUser";
+            LblNamaUser.Text = " ";
             // 
             // flpKolomChat
             // 
             flpKolomChat.AutoScroll = true;
             flpKolomChat.BackColor = SystemColors.ActiveCaption;
             flpKolomChat.FlowDirection = FlowDirection.TopDown;
-            flpKolomChat.Location = new Point(253, 39);
+            flpKolomChat.Location = new Point(317, 49);
+            flpKolomChat.Margin = new Padding(4);
             flpKolomChat.Name = "flpKolomChat";
-            flpKolomChat.Size = new Size(521, 350);
+            flpKolomChat.Size = new Size(651, 438);
             flpKolomChat.TabIndex = 6;
             flpKolomChat.WrapContents = false;
             flpKolomChat.Paint += flpKolomChat_Paint;
@@ -80,21 +85,25 @@
             // flpKolomUser
             // 
             flpKolomUser.BackColor = Color.FromArgb(255, 192, 128);
-            flpKolomUser.Location = new Point(12, 39);
+            flpKolomUser.Location = new Point(15, 49);
+            flpKolomUser.Margin = new Padding(4);
             flpKolomUser.Name = "flpKolomUser";
-            flpKolomUser.Size = new Size(235, 387);
+            flpKolomUser.Size = new Size(294, 484);
             flpKolomUser.TabIndex = 7;
+            flpKolomUser.Paint += flpKolomUser_Paint;
             // 
             // Chat_admin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(flpKolomUser);
             Controls.Add(LblNamaUser);
             Controls.Add(BtnSend);
             Controls.Add(TxtPesan);
             Controls.Add(flpKolomChat);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Chat_admin";
             Text = "Chat_admin";
             Load += Chat_admin_Load;

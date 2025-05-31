@@ -126,8 +126,11 @@ namespace Project_PBO_Kel_5
         {
 
         }
+        private void TxtPesan_TextChanged(object sender, EventArgs e)
+        {
 
-        private void Chat_admin_Load(object sender, EventArgs e)
+        }
+        private void flpKolomUser_Paint(object sender, PaintEventArgs e)
         {
 
         }
