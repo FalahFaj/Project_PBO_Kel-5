@@ -9,7 +9,7 @@ namespace Project_PBO_Kel_5
         static void Main()
         {
             // To customize application configuration such as set high DPI settings or default font,
-            Application.Run(new Riwayat_Transaksi());
+            Application.Run(new Chat_admin());
         }
 
     }
