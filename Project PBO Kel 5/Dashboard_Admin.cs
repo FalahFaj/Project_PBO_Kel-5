@@ -175,5 +175,9 @@ namespace Project_PBO_Kel_5
 
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

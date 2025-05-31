@@ -122,17 +122,14 @@ namespace Project_PBO_Kel_5
             TxtPesan.Clear();
             Load_chat(id_customer_aktif.Value);
         }
-
         private void flpKolomChat_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void TxtPesan_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void flpKolomUser_Paint(object sender, PaintEventArgs e)
         {
 
