@@ -32,16 +32,17 @@
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            label2 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
             panel3 = new Panel();
             panel4 = new Panel();
             panel7 = new Panel();
             panel8 = new Panel();
             panel6 = new Panel();
             panel5 = new Panel();
-            label2 = new Label();
-            pictureBox2 = new PictureBox();
+            button1 = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -78,6 +79,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Gainsboro;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(3, 3);
@@ -85,12 +87,21 @@
             panel1.Size = new Size(176, 221);
             panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(23, 179);
+            label2.Name = "label2";
+            label2.Size = new Size(76, 25);
+            label2.TabIndex = 1;
+            label2.Text = "400.000";
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(23, 9);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(126, 182);
+            pictureBox1.Size = new Size(126, 158);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -103,6 +114,16 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(176, 221);
             panel2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(26, 9);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(126, 125);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -152,24 +173,14 @@
             panel5.Size = new Size(176, 221);
             panel5.TabIndex = 4;
             // 
-            // label2
+            // button1
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(23, 194);
-            label2.Name = "label2";
-            label2.Size = new Size(76, 25);
-            label2.TabIndex = 1;
-            label2.Text = "400.000";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(30, 9);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(126, 182);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            button1.Location = new Point(105, 187);
+            button1.Name = "button1";
+            button1.Size = new Size(68, 31);
+            button1.TabIndex = 2;
+            button1.Text = "+";
+            button1.UseVisualStyleBackColor = true;
             // 
             // SubMahar
             // 
@@ -207,5 +218,6 @@
         private Panel panel5;
         private Label label2;
         private PictureBox pictureBox2;
+        private Button button1;
     }
 }

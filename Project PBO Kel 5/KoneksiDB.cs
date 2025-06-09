@@ -44,7 +44,7 @@ namespace Project_PBO_Kel_5
 
             modelBuilder.Entity<Customer>()
                 .HasOne(k => k.alamat)
-                .WithMany(d => d.customer)
+                .WithMany()
                 .HasForeignKey(c => c.id_alamat);
 
             modelBuilder.Entity<Data_chat>()
