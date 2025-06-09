@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,6 +13,7 @@ using Npgsql;
 
 namespace Project_PBO_Kel_5
 {
+    [NotMapped]
     public partial class Status : Form
     {
         private DataTable tabelData = new DataTable();

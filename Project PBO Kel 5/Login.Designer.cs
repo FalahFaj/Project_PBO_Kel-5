@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             textBox2 = new TextBox();

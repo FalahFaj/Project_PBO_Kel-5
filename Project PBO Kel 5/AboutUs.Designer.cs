@@ -1,5 +1,8 @@
-﻿namespace Project_PBO_Kel_5
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Project_PBO_Kel_5
 {
+    [NotMapped]
     partial class AboutUs
     {
         /// <summary>

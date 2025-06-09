@@ -54,7 +54,7 @@ namespace Project_PBO_Kel_5
 
             Produk produkBaru = new Produk()
             {
-                nama_produk = txtNama.Text,
+                nama = txtNama.Text,
                 harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0,
                 stok = int.TryParse(txtStok.Text, out int stock) ? stock : 0,
                 //Deskripsi = txtDeskripsi.Text
@@ -76,7 +76,7 @@ namespace Project_PBO_Kel_5
                     var selectedProduk = daftarProduk.Find(p => p.id_produk == selectedId);
                     if (selectedProduk != null)
                     {
-                        txtNama.Text = selectedProduk.nama_produk;
+                        txtNama.Text = selectedProduk.nama;
                         txtHarga.Text = selectedProduk.harga.ToString();
                         txtStok.Text = selectedProduk.stok.ToString();
                         //txtDeskripsi.Text = selectedProduk.Deskripsi;
@@ -91,7 +91,7 @@ namespace Project_PBO_Kel_5
             if (dataGridView1.Tag is int index && index >= 0 && index < daftarProduk.Count)
             {
                 var produk = daftarProduk[index];
-                produk.nama_produk = txtNama.Text;
+                produk.nama = txtNama.Text;
                 produk.harga = decimal.TryParse(txtHarga.Text, out decimal harga) ? harga : 0;
                 produk.stok = int.TryParse(txtStok.Text, out int stock) ? stock : 0;
                 //produk.Deskripsi = txtDeskripsi.Text;

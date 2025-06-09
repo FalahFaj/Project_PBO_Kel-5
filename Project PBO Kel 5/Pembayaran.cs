@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project_PBO_Kel_5
 {

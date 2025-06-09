@@ -17,11 +17,15 @@ namespace Project_PBO_Kel_5.Model
         public string email_address { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        public int id_alamat { get; set; }
-        [ForeignKey("id_alamat")]
-        public Alamat alamat { get; set; }
+        public string rt { get; set; }
+        public string rw { get; set; }
+        public string kelurahan { get; set; }
+        public string kecamatan { get; set; }
+        public string kota { get; set; }
+        public string provinsi { get; set; }
         public ICollection<Transaksi> transaksi { get; set; }
         public ICollection<Data_chat> data_chat { get; set; }
+
 
     }
 }

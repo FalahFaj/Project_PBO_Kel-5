@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Windows.Forms;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Tables;
@@ -8,6 +9,7 @@ using Font = MigraDoc.DocumentObjectModel.Font;
 
 namespace Project_PBO_Kel_5
 {
+    [NotMapped]
     public partial class Riwayat_Transaksi : Form
     {
         public Riwayat_Transaksi()
