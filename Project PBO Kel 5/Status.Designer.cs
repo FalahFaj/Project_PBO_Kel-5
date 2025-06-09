@@ -32,14 +32,14 @@
             label1 = new Label();
             comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button2 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,9 +49,10 @@
             label1.FlatStyle = FlatStyle.System;
             label1.Font = new Font("Nirmala UI", 15F);
             label1.ForeColor = Color.FromArgb(63, 81, 181);
-            label1.Location = new Point(453, 9);
+            label1.Location = new Point(566, 11);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(193, 35);
+            label1.Size = new Size(228, 41);
             label1.TabIndex = 0;
             label1.Text = "Detail Transaksi ";
             // 
@@ -59,9 +60,10 @@
             // 
             comboBox1.BackColor = Color.WhiteSmoke;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(37, 64);
+            comboBox1.Location = new Point(46, 80);
+            comboBox1.Margin = new Padding(4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(188, 33);
             comboBox1.TabIndex = 1;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -69,14 +71,44 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView1.Location = new Point(37, 98);
+            dataGridView1.Location = new Point(46, 122);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.ScrollBars = ScrollBars.Horizontal;
-            dataGridView1.Size = new Size(1001, 516);
+            dataGridView1.Size = new Size(1148, 645);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(46, 0);
+            button1.Margin = new Padding(4);
+            button1.Name = "button1";
+            button1.Size = new Size(62, 55);
+            button1.TabIndex = 3;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = SystemColors.Control;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(1311, 0);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(41, 36);
+            button2.TabIndex = 4;
+            button2.UseVisualStyleBackColor = true;
             // 
             // Column1
             // 
@@ -111,54 +143,28 @@
             Column5.HeaderText = "Status";
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
-            Column5.Width = 270;
+            Column5.Width = 150;
             // 
             // Column6
             // 
             Column6.HeaderText = "Total Harga";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
-            Column6.Width = 400;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(37, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(50, 44);
-            button1.TabIndex = 3;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = SystemColors.Control;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(1049, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(33, 29);
-            button2.TabIndex = 4;
-            button2.UseVisualStyleBackColor = true;
+            Column6.Width = 150;
             // 
             // Status
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(149, 175, 192);
-            ClientSize = new Size(1082, 627);
+            ClientSize = new Size(1352, 784);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Status";
             Text = "Riwayat_Transaksi";
             Load += Riwayat_Transaksi_Load;
@@ -172,13 +178,13 @@
         private Label label1;
         private ComboBox comboBox1;
         private DataGridView dataGridView1;
+        private Button button1;
+        private Button button2;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
-        private Button button1;
-        private Button button2;
     }
 }

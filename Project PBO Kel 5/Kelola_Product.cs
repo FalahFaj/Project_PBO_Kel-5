@@ -122,5 +122,10 @@ namespace Project_PBO_Kel_5
                 MessageBox.Show("Pilih data yang ingin dihapus terlebih dahulu!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void txtDeskripsi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

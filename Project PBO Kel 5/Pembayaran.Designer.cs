@@ -38,13 +38,19 @@
             pictureBox1 = new PictureBox();
             SidebarTimer = new System.Windows.Forms.Timer(components);
             label2 = new Label();
-            dataGridView2 = new DataGridView();
             label3 = new Label();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
             panel1 = new Panel();
             pictureBox5 = new PictureBox();
             SidebarContainer = new FlowLayoutPanel();
+            dataGridView1 = new DataGridView();
+            Beli = new DataGridViewTextBoxColumn();
+            Harga = new DataGridViewTextBoxColumn();
+            dataGridView2 = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dateTimePicker1 = new DateTimePicker();
+            button1 = new Button();
             panel4 = new Panel();
             panel3 = new Panel();
             panel2 = new Panel();
@@ -54,11 +60,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SidebarContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // panel4
@@ -135,30 +141,18 @@
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(288, 3);
+            label2.Location = new Point(466, 28);
             label2.Name = "label2";
             label2.Size = new Size(258, 49);
             label2.TabIndex = 2;
             label2.Text = "Payment Details";
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.AllowUserToAddRows = false;
-            dataGridView2.AllowUserToDeleteRows = false;
-            dataGridView2.BackgroundColor = Color.White;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(608, 115);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(271, 324);
-            dataGridView2.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DimGray;
-            label3.Location = new Point(717, 67);
+            label3.Location = new Point(759, 80);
             label3.Name = "label3";
             label3.Size = new Size(56, 32);
             label3.TabIndex = 5;
@@ -169,23 +163,12 @@
             label4.AutoSize = true;
             label4.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.DimGray;
-            label4.Location = new Point(389, 67);
+            label4.Location = new Point(318, 80);
             label4.Name = "label4";
             label4.Size = new Size(101, 32);
             label4.TabIndex = 6;
             label4.Text = "Purchase";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(298, 115);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(271, 324);
-            dataGridView1.TabIndex = 7;
+            label4.Click += label4_Click;
             // 
             // panel1
             // 
@@ -222,16 +205,82 @@
             SidebarContainer.Size = new Size(71, 600);
             SidebarContainer.TabIndex = 1;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Beli, Harga });
+            dataGridView1.Location = new Point(193, 115);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(360, 225);
+            dataGridView1.TabIndex = 10;
+            // 
+            // Beli
+            // 
+            Beli.HeaderText = "Beli";
+            Beli.MinimumWidth = 8;
+            Beli.Name = "Beli";
+            Beli.Width = 150;
+            // 
+            // Harga
+            // 
+            Harga.HeaderText = "Harga";
+            Harga.MinimumWidth = 8;
+            Harga.Name = "Harga";
+            Harga.Width = 150;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2 });
+            dataGridView2.Location = new Point(604, 115);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 62;
+            dataGridView2.Size = new Size(360, 225);
+            dataGridView2.TabIndex = 11;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Beli";
+            dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.HeaderText = "Harga";
+            dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(604, 346);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(300, 31);
+            dateTimePicker1.TabIndex = 12;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(736, 459);
+            button1.Name = "button1";
+            button1.Size = new Size(228, 83);
+            button1.TabIndex = 13;
+            button1.Text = "Accept";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Pembayaran
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1100, 600);
+            Controls.Add(button1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(dataGridView2);
             Controls.Add(label2);
             Controls.Add(SidebarContainer);
             FormBorderStyle = FormBorderStyle.None;
@@ -244,11 +293,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             SidebarContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -256,15 +305,21 @@
         #endregion
         private System.Windows.Forms.Timer SidebarTimer;
         private Label label2;
-        private DataGridView dataGridView2;
         private Label label3;
         private Label label4;
-        private DataGridView dataGridView1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox5;
         internal FlowLayoutPanel SidebarContainer;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Beli;
+        private DataGridViewTextBoxColumn Harga;
+        private DataGridView dataGridView2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DateTimePicker dateTimePicker1;
+        private Button button1;
     }
 }

@@ -46,11 +46,12 @@
             dataGridView1.ColumnHeadersVisible = false;
             dataGridView1.Enabled = false;
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(77, 333);
+            dataGridView1.Location = new Point(96, 416);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(920, 250);
+            dataGridView1.Size = new Size(1150, 312);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
@@ -61,16 +62,18 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Stencil", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(433, 9);
+            label1.Location = new Point(541, 11);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(268, 27);
+            label1.Size = new Size(328, 33);
             label1.TabIndex = 0;
             label1.Text = "MANAJEMENT PRODUCT";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(395, 4);
+            pictureBox1.Location = new Point(494, 5);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(32, 32);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -82,9 +85,10 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.ForeColor = Color.Transparent;
-            label2.Location = new Point(95, 75);
+            label2.Location = new Point(119, 94);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(107, 20);
+            label2.Size = new Size(133, 25);
             label2.TabIndex = 3;
             label2.Text = "ID_Produk       :";
             // 
@@ -92,9 +96,10 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(92, 163);
+            label3.Location = new Point(115, 204);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(109, 20);
+            label3.Size = new Size(136, 25);
             label3.TabIndex = 4;
             label3.Text = "Stok                 :";
             // 
@@ -102,9 +107,10 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(93, 212);
+            label4.Location = new Point(116, 265);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(109, 20);
+            label4.Size = new Size(134, 25);
             label4.TabIndex = 5;
             label4.Text = "Harga              :";
             // 
@@ -112,46 +118,53 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.Transparent;
-            label5.Location = new Point(92, 265);
+            label5.Location = new Point(115, 331);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(104, 20);
+            label5.Size = new Size(128, 25);
             label5.TabIndex = 6;
             label5.Text = "Deskripsi        :";
             // 
             // txtNama
             // 
-            txtNama.Location = new Point(200, 115);
+            txtNama.Location = new Point(250, 144);
+            txtNama.Margin = new Padding(4, 4, 4, 4);
             txtNama.Name = "txtNama";
-            txtNama.Size = new Size(797, 27);
+            txtNama.Size = new Size(995, 31);
             txtNama.TabIndex = 7;
             // 
             // txtStok
             // 
-            txtStok.Location = new Point(199, 163);
+            txtStok.Location = new Point(249, 204);
+            txtStok.Margin = new Padding(4, 4, 4, 4);
             txtStok.Name = "txtStok";
-            txtStok.Size = new Size(798, 27);
+            txtStok.Size = new Size(996, 31);
             txtStok.TabIndex = 8;
             // 
             // txtHarga
             // 
-            txtHarga.Location = new Point(200, 212);
+            txtHarga.Location = new Point(250, 265);
+            txtHarga.Margin = new Padding(4, 4, 4, 4);
             txtHarga.Name = "txtHarga";
-            txtHarga.Size = new Size(797, 27);
+            txtHarga.Size = new Size(995, 31);
             txtHarga.TabIndex = 9;
             // 
             // txtDeskripsi
             // 
-            txtDeskripsi.Location = new Point(197, 265);
+            txtDeskripsi.Location = new Point(246, 331);
+            txtDeskripsi.Margin = new Padding(4, 4, 4, 4);
             txtDeskripsi.Name = "txtDeskripsi";
-            txtDeskripsi.Size = new Size(800, 27);
+            txtDeskripsi.Size = new Size(999, 31);
             txtDeskripsi.TabIndex = 10;
+            txtDeskripsi.TextChanged += txtDeskripsi_TextChanged;
             // 
             // btnTambah
             // 
             btnTambah.BackColor = Color.SeaGreen;
-            btnTambah.Location = new Point(265, 298);
+            btnTambah.Location = new Point(331, 372);
+            btnTambah.Margin = new Padding(4, 4, 4, 4);
             btnTambah.Name = "btnTambah";
-            btnTambah.Size = new Size(94, 29);
+            btnTambah.Size = new Size(118, 36);
             btnTambah.TabIndex = 11;
             btnTambah.Text = "Tambah";
             btnTambah.UseVisualStyleBackColor = false;
@@ -161,9 +174,10 @@
             // 
             btnUpdate.BackColor = Color.DarkCyan;
             btnUpdate.ForeColor = SystemColors.ControlText;
-            btnUpdate.Location = new Point(401, 298);
+            btnUpdate.Location = new Point(501, 372);
+            btnUpdate.Margin = new Padding(4, 4, 4, 4);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(94, 29);
+            btnUpdate.Size = new Size(118, 36);
             btnUpdate.TabIndex = 12;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
@@ -172,9 +186,10 @@
             // btnHapus
             // 
             btnHapus.BackColor = Color.FromArgb(255, 52, 52);
-            btnHapus.Location = new Point(538, 298);
+            btnHapus.Location = new Point(672, 372);
+            btnHapus.Margin = new Padding(4, 4, 4, 4);
             btnHapus.Name = "btnHapus";
-            btnHapus.Size = new Size(94, 29);
+            btnHapus.Size = new Size(118, 36);
             btnHapus.TabIndex = 13;
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = false;
@@ -184,36 +199,39 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = Color.Transparent;
-            label6.Location = new Point(93, 115);
+            label6.Location = new Point(116, 144);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(106, 20);
+            label6.Size = new Size(130, 25);
             label6.TabIndex = 14;
             label6.Text = "Nama Produk :";
             // 
             // txtID
             // 
-            txtID.Location = new Point(200, 75);
+            txtID.Location = new Point(250, 94);
+            txtID.Margin = new Padding(4, 4, 4, 4);
             txtID.Name = "txtID";
-            txtID.Size = new Size(797, 27);
+            txtID.Size = new Size(995, 31);
             txtID.TabIndex = 15;
             // 
             // BtnExportPDF
             // 
             BtnExportPDF.BackColor = Color.WhiteSmoke;
             BtnExportPDF.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BtnExportPDF.Location = new Point(869, 589);
+            BtnExportPDF.Location = new Point(1086, 736);
+            BtnExportPDF.Margin = new Padding(4, 4, 4, 4);
             BtnExportPDF.Name = "BtnExportPDF";
-            BtnExportPDF.Size = new Size(128, 29);
+            BtnExportPDF.Size = new Size(160, 36);
             BtnExportPDF.TabIndex = 16;
             BtnExportPDF.Text = "Convert Ke PDF";
             BtnExportPDF.UseVisualStyleBackColor = false;
             // 
             // Kelola_Product
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 102);
-            ClientSize = new Size(1082, 627);
+            ClientSize = new Size(1352, 784);
             Controls.Add(BtnExportPDF);
             Controls.Add(txtID);
             Controls.Add(label6);
@@ -232,6 +250,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Kelola_Product";
             Text = "Kelola_Product";
             Load += Kelola_Product_Load;

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Project_PBO_Kel_5
 {
-    public partial class Keranjang : Form
+    public partial class formangkat: Form
     {
-        public Keranjang()
+        public formangkat()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
