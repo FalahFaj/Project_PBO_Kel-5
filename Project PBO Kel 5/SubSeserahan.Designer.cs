@@ -31,14 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubSeserahan));
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel7 = new Panel();
+            pictureBox1 = new PictureBox();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
             panel6 = new Panel();
             panel8 = new Panel();
-            pictureBox1 = new PictureBox();
+            panel5 = new Panel();
+            panel4 = new Panel();
+            label1 = new Label();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,11 +66,24 @@
             // panel7
             // 
             panel7.BackColor = Color.Gainsboro;
+            panel7.Controls.Add(iconButton1);
+            panel7.Controls.Add(label1);
             panel7.Controls.Add(pictureBox1);
             panel7.Location = new Point(3, 3);
             panel7.Name = "panel7";
             panel7.Size = new Size(176, 221);
             panel7.TabIndex = 7;
+            panel7.Paint += panel7_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(170, 155);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -94,22 +109,6 @@
             panel3.Size = new Size(176, 221);
             panel3.TabIndex = 7;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Gainsboro;
-            panel4.Location = new Point(549, 230);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(176, 221);
-            panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Gainsboro;
-            panel5.Location = new Point(367, 230);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(176, 221);
-            panel5.TabIndex = 9;
-            // 
             // panel6
             // 
             panel6.BackColor = Color.Gainsboro;
@@ -126,15 +125,44 @@
             panel8.Size = new Size(176, 221);
             panel8.TabIndex = 11;
             // 
-            // pictureBox1
+            // panel5
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(24, 13);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(126, 182);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            panel5.BackColor = Color.Gainsboro;
+            panel5.Location = new Point(367, 230);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(176, 221);
+            panel5.TabIndex = 9;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Gainsboro;
+            panel4.Location = new Point(549, 230);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(176, 221);
+            panel4.TabIndex = 8;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 189);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 25);
+            label1.TabIndex = 2;
+            label1.Text = "Sewa";
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.Transparent;
+            iconButton1.ForeColor = Color.Transparent;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Ad;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(128, 184);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(45, 34);
+            iconButton1.TabIndex = 3;
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // SubSeserahan
             // 
@@ -148,6 +176,7 @@
             Load += SubSeserahan_Load;
             flowLayoutPanel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -164,5 +193,7 @@
         private Panel panel2;
         private Panel panel3;
         private PictureBox pictureBox1;
+        private Label label1;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

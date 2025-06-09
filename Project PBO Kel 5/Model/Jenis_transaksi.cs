@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_PBO_Kel_5.Model
 {
-    internal class Jenis_transaksi
+    public class Jenis_transaksi
     {
         [Key]
         public int id_jenis_transaksi { get; set; }

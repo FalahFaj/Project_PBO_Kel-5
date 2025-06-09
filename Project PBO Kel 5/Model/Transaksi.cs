@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_PBO_Kel_5.Model
 {
-    internal class Transaksi
+    public class Transaksi
     {
         [Key]
         public int id_transaksi { get; set; }
@@ -22,6 +22,5 @@ namespace Project_PBO_Kel_5.Model
         public int id_penyewaan { get; set; }
         [ForeignKey("id_jenis_transaksi")]
         public int id_jenis_transaksi { get; set; }
-        public ICollection<Item_transaksi> transaksi { get; set; }
     }
 }

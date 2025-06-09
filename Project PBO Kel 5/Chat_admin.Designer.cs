@@ -106,7 +106,6 @@
             Margin = new Padding(4);
             Name = "Chat_admin";
             Text = "Chat_admin";
-            //Load += Chat_admin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

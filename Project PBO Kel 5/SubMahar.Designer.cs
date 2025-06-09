@@ -31,21 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubMahar));
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
+            flowLayoutPanel6 = new FlowLayoutPanel();
             pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel7 = new Panel();
-            panel8 = new Panel();
-            panel6 = new Panel();
-            panel5 = new Panel();
             label2 = new Label();
+            flowLayoutPanel2 = new FlowLayoutPanel();
             pictureBox2 = new PictureBox();
+            label3 = new Label();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            flowLayoutPanel4 = new FlowLayoutPanel();
+            flowLayoutPanel5 = new FlowLayoutPanel();
+            flowLayoutPanel9 = new FlowLayoutPanel();
+            flowLayoutPanel8 = new FlowLayoutPanel();
+            flowLayoutPanel7 = new FlowLayoutPanel();
             flowLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
+            flowLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -61,115 +62,119 @@
             // 
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.BackColor = Color.White;
-            flowLayoutPanel1.Controls.Add(panel1);
-            flowLayoutPanel1.Controls.Add(panel2);
-            flowLayoutPanel1.Controls.Add(panel3);
-            flowLayoutPanel1.Controls.Add(panel4);
-            flowLayoutPanel1.Controls.Add(panel7);
-            flowLayoutPanel1.Controls.Add(panel8);
-            flowLayoutPanel1.Controls.Add(panel6);
-            flowLayoutPanel1.Controls.Add(panel5);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel6);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel3);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel4);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel5);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel9);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel8);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel7);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(800, 450);
             flowLayoutPanel1.TabIndex = 1;
             // 
-            // panel1
+            // flowLayoutPanel6
             // 
-            panel1.BackColor = Color.Gainsboro;
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(176, 221);
-            panel1.TabIndex = 0;
+            flowLayoutPanel6.Controls.Add(pictureBox1);
+            flowLayoutPanel6.Controls.Add(label2);
+            flowLayoutPanel6.Location = new Point(3, 3);
+            flowLayoutPanel6.Name = "flowLayoutPanel6";
+            flowLayoutPanel6.Size = new Size(182, 245);
+            flowLayoutPanel6.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(23, 9);
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Margin = new Padding(3, 3, 6, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(126, 182);
+            pictureBox1.Size = new Size(176, 179);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Gainsboro;
-            panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(185, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(176, 221);
-            panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Gainsboro;
-            panel3.Location = new Point(367, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(176, 221);
-            panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Gainsboro;
-            panel4.Location = new Point(549, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(176, 221);
-            panel4.TabIndex = 3;
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.Gainsboro;
-            panel7.Location = new Point(3, 230);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(176, 221);
-            panel7.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.Gainsboro;
-            panel8.Location = new Point(185, 230);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(176, 221);
-            panel8.TabIndex = 7;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.Gainsboro;
-            panel6.Location = new Point(367, 230);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(176, 221);
-            panel6.TabIndex = 5;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Gainsboro;
-            panel5.Location = new Point(549, 230);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(176, 221);
-            panel5.TabIndex = 4;
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(23, 194);
+            label2.Location = new Point(3, 185);
             label2.Name = "label2";
-            label2.Size = new Size(76, 25);
+            label2.Size = new Size(51, 25);
             label2.TabIndex = 1;
-            label2.Text = "400.000";
+            label2.Text = "sewa";
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(pictureBox2);
+            flowLayoutPanel2.Controls.Add(label3);
+            flowLayoutPanel2.Location = new Point(191, 3);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(182, 245);
+            flowLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(30, 9);
+            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Margin = new Padding(3, 3, 6, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(126, 182);
+            pictureBox2.Size = new Size(176, 163);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(3, 169);
+            label3.Name = "label3";
+            label3.Size = new Size(51, 25);
+            label3.TabIndex = 2;
+            label3.Text = "sewa";
+            // 
+            // flowLayoutPanel3
+            // 
+            flowLayoutPanel3.Location = new Point(379, 3);
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
+            flowLayoutPanel3.Size = new Size(182, 245);
+            flowLayoutPanel3.TabIndex = 1;
+            // 
+            // flowLayoutPanel4
+            // 
+            flowLayoutPanel4.Location = new Point(567, 3);
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
+            flowLayoutPanel4.Size = new Size(182, 245);
+            flowLayoutPanel4.TabIndex = 2;
+            // 
+            // flowLayoutPanel5
+            // 
+            flowLayoutPanel5.Location = new Point(3, 254);
+            flowLayoutPanel5.Name = "flowLayoutPanel5";
+            flowLayoutPanel5.Size = new Size(182, 245);
+            flowLayoutPanel5.TabIndex = 3;
+            // 
+            // flowLayoutPanel9
+            // 
+            flowLayoutPanel9.Location = new Point(191, 254);
+            flowLayoutPanel9.Name = "flowLayoutPanel9";
+            flowLayoutPanel9.Size = new Size(182, 245);
+            flowLayoutPanel9.TabIndex = 7;
+            // 
+            // flowLayoutPanel8
+            // 
+            flowLayoutPanel8.Location = new Point(379, 254);
+            flowLayoutPanel8.Name = "flowLayoutPanel8";
+            flowLayoutPanel8.Size = new Size(182, 245);
+            flowLayoutPanel8.TabIndex = 6;
+            // 
+            // flowLayoutPanel7
+            // 
+            flowLayoutPanel7.Location = new Point(567, 254);
+            flowLayoutPanel7.Name = "flowLayoutPanel7";
+            flowLayoutPanel7.Size = new Size(182, 245);
+            flowLayoutPanel7.TabIndex = 5;
             // 
             // SubMahar
             // 
@@ -181,12 +186,12 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "SubMahar";
             Text = "SubMahar";
-            Load += SubMahar_Load;
             flowLayoutPanel1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            flowLayoutPanel6.ResumeLayout(false);
+            flowLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -196,16 +201,17 @@
 
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel1;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private FlowLayoutPanel flowLayoutPanel6;
         private PictureBox pictureBox1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Panel panel7;
-        private Panel panel8;
-        private Panel panel6;
-        private Panel panel5;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private FlowLayoutPanel flowLayoutPanel4;
+        private FlowLayoutPanel flowLayoutPanel5;
+        private FlowLayoutPanel flowLayoutPanel9;
+        private FlowLayoutPanel flowLayoutPanel8;
+        private FlowLayoutPanel flowLayoutPanel7;
         private Label label2;
         private PictureBox pictureBox2;
+        private Label label3;
     }
 }

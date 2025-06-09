@@ -41,30 +41,20 @@
             label4 = new Label();
             linkLabel1 = new LinkLabel();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-2, -9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(580, 610);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(193, 35);
+            pictureBox2.Location = new Point(188, 35);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(70, 67);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -74,9 +64,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(143, 105);
+            label1.Font = new Font("Poppins", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Gray;
+            label1.Location = new Point(118, 105);
             label1.Name = "label1";
-            label1.Size = new Size(180, 20);
+            label1.Size = new Size(216, 35);
             label1.TabIndex = 2;
             label1.Text = "Get Started to Login";
             // 
@@ -84,7 +76,7 @@
             // 
             textBox2.BackColor = Color.White;
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Gray;
             textBox2.Location = new Point(653, 249);
             textBox2.Multiline = true;
@@ -108,7 +100,7 @@
             // 
             textBox3.BackColor = Color.White;
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox3.ForeColor = Color.Gray;
             textBox3.Location = new Point(653, 325);
             textBox3.Multiline = true;
@@ -144,10 +136,11 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold);
-            label2.Location = new Point(867, 9);
+            label2.Font = new Font("Poppins", 8F, FontStyle.Bold);
+            label2.ForeColor = Color.Gray;
+            label2.Location = new Point(873, 9);
             label2.Name = "label2";
-            label2.Size = new Size(86, 17);
+            label2.Size = new Size(97, 28);
             label2.TabIndex = 12;
             label2.Text = "New User?";
             // 
@@ -155,10 +148,11 @@
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold);
+            label4.Font = new Font("Poppins", 8F, FontStyle.Bold);
+            label4.ForeColor = Color.Gray;
             label4.Location = new Point(1037, 9);
             label4.Name = "label4";
-            label4.Size = new Size(43, 17);
+            label4.Size = new Size(51, 28);
             label4.TabIndex = 14;
             label4.Text = "Here";
             // 
@@ -166,11 +160,11 @@
             // 
             linkLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel1.Font = new Font("Poppins", 8F, FontStyle.Bold);
             linkLabel1.LinkColor = Color.FromArgb(219, 131, 130);
             linkLabel1.Location = new Point(963, 9);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(69, 17);
+            linkLabel1.Size = new Size(80, 28);
             linkLabel1.TabIndex = 15;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Register";
@@ -181,20 +175,30 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox3);
-            panel1.Location = new Point(584, 90);
+            panel1.Location = new Point(581, 90);
             panel1.Name = "panel1";
             panel1.Size = new Size(444, 413);
             panel1.TabIndex = 17;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(-34, -3);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(645, 613);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 18;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
+            // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(11F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(1100, 600);
-            Controls.Add(checkBox1);
-            Controls.Add(label3);
+            Controls.Add(pictureBox6);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -211,13 +215,13 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = " ";
             Load += Login_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -237,5 +241,6 @@
         private CheckBox checkBox1;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private PictureBox pictureBox6;
     }
 }

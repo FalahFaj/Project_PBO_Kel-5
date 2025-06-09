@@ -129,6 +129,7 @@ namespace Project_PBO_Kel_5
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(247, 550);
             flowLayoutPanel1.TabIndex = 1;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint_1;
             // 
             // flowLayoutPanel2
             // 
@@ -140,8 +141,9 @@ namespace Project_PBO_Kel_5
             flowLayoutPanel2.Location = new Point(0, 0);
             flowLayoutPanel2.Margin = new Padding(0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(191, 59);
+            flowLayoutPanel2.Size = new Size(191, 247);
             flowLayoutPanel2.TabIndex = 6;
+            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
             // pnCategories
             // 
@@ -285,7 +287,7 @@ namespace Project_PBO_Kel_5
             // 
             pnbarang.Controls.Add(pictureBox3);
             pnbarang.Controls.Add(button2);
-            pnbarang.Location = new Point(3, 62);
+            pnbarang.Location = new Point(3, 250);
             pnbarang.Name = "pnbarang";
             pnbarang.Size = new Size(191, 59);
             pnbarang.TabIndex = 4;
@@ -319,7 +321,7 @@ namespace Project_PBO_Kel_5
             // 
             pnAboutus.Controls.Add(pictureBox4);
             pnAboutus.Controls.Add(button3);
-            pnAboutus.Location = new Point(3, 127);
+            pnAboutus.Location = new Point(3, 315);
             pnAboutus.Name = "pnAboutus";
             pnAboutus.Size = new Size(191, 59);
             pnAboutus.TabIndex = 4;
@@ -353,7 +355,7 @@ namespace Project_PBO_Kel_5
             // 
             pnlogout.Controls.Add(pictureBox5);
             pnlogout.Controls.Add(button4);
-            pnlogout.Location = new Point(3, 192);
+            pnlogout.Location = new Point(3, 380);
             pnlogout.Name = "pnlogout";
             pnlogout.Size = new Size(191, 59);
             pnlogout.TabIndex = 5;

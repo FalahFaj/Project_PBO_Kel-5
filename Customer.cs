@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,5 +25,7 @@ namespace Project_PBO_Kel_5.Model
         public string provinsi { get; set; }
         public ICollection<Transaksi> transaksi { get; set; }
         public ICollection<Data_chat> data_chat { get; set; }
+
+
     }
 }
