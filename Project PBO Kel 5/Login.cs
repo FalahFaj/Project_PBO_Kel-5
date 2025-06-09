@@ -56,21 +56,26 @@ namespace Project_PBO_Kel_5
             {
                 if (cekLogin(username, password))
                 {
-                    MessageBox.Show("Login Berhasil","Berhasil",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Login Berhasil", "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    Form1 dashbord = new Form1();
+                    DashboardUser dashbord = new DashboardUser();
                     dashbord.ShowDialog();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Username atau Password Salah","Gagal",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Username atau Password Salah", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
                 MessageBox.Show("Username atau Password tidak boleh kosong", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

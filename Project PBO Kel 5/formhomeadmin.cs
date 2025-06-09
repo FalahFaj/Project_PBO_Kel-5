@@ -1,27 +1,26 @@
-﻿using System;
+﻿using LiveChartsCore.SkiaSharpView.Painting;
+using LiveChartsCore.SkiaSharpView;
+using LiveChartsCore;
+using SkiaSharp;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore.SkiaSharpView.WinForms;
-using LiveChartsCore.SkiaSharpView.Painting;
-using SkiaSharp;
 
 namespace Project_PBO_Kel_5
 {
-    public partial class Dashboard_Admin : Form
+    public partial class formhomeadmin : Form
     {
-        public Dashboard_Admin()
+        public formhomeadmin()
         {
             InitializeComponent();
         }
-
         // Ganti tanggalLabels jadi bulanLabels
         private readonly string[] bulanLabels = new[]
         {

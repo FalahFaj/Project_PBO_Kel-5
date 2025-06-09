@@ -16,10 +16,5 @@ namespace Project_PBO_Kel_5
         {
             InitializeComponent();
         }
-
-        private void SubMahar_Load(object sender, EventArgs e)
-        {
-            this.ControlBox = false; 
-        }
     }
 }

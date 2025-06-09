@@ -17,9 +17,9 @@ namespace Project_PBO_Kel_5
             InitializeComponent();
         }
 
-        private void Keranjang_Load(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.ControlBox = false; 
+
         }
     }
 }
